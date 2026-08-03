@@ -1,0 +1,30 @@
+packages:
+  - .
+  - ./agent
+  - ./deploy-role
+
+allowBuilds:
+  esbuild: false
+  protobufjs: false
+  unrs-resolver: false
+
+blockExoticSubdeps: true
+
+minimumReleaseAge: 10080 # 7 days in minutes
+
+minimumReleaseAgeExclude:
+  - pnpm@11.19.0
+  - '@modelcontextprotocol/client@2.0.0'
+  - '@modelcontextprotocol/core@2.0.0'
+  - '@hono/node-server@2.0.5'
+  - '@opentelemetry/propagator-jaeger@2.9.0'
+
+overrides:
+  '@hono/node-server@<2.0.5': ^2.0.5
+  '@opentelemetry/propagator-jaeger@<2.9.0': ^2.9.0
+  eslint-import-resolver-typescript: '^4.4.5'
+  semver: '>=7'
+
+strictPeerDependencies: false
+
+trustPolicy: no-downgrade
