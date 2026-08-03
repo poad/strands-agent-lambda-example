@@ -1,0 +1,27 @@
+{
+  "name": "strands-agent-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "lint": "pnpm -r --if-present lint",
+    "lint-fix": "pnpm -r --if-present lint-fix"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.19.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^24.18.1",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {}
+}
