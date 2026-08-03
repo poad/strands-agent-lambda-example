@@ -10,10 +10,10 @@
     "lint-fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^1.75.1",
+    "@dotenvx/dotenvx": "^2.19.0",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "24.10.1",
+    "@types/node": "26.1.2",
     "@vitest/eslint-plugin": "^1.6.24",
     "aws-cdk": "^2.1133.0",
     "eslint": "^10.8.0",
