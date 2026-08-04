@@ -15,18 +15,18 @@ export class DeployRoleStack extends cdk.Stack {
       roleName: 'strands-agent-lambda-example-deploy-role',
       assumedBy: new iam.FederatedPrincipal(
         `arn:aws:iam::${this.account}:oidc-provider/token.actions.githubusercontent.com`, {
-        StringEquals: {
-          'token.actions.githubusercontent.com:aud': 'sts.amazonaws.com',
-          "token.actions.githubusercontent.com:repository_id": repositoryId,
-          "token.actions.githubusercontent.com:repository_owner_id": repositoryOwnerId,
+          StringEquals: {
+            'token.actions.githubusercontent.com:aud': 'sts.amazonaws.com',
+            'token.actions.githubusercontent.com:repository_id': repositoryId,
+            'token.actions.githubusercontent.com:repository_owner_id': repositoryOwnerId,
+          },
+          StringLike: {
+            'token.actions.githubusercontent.com:sub': [
+              'repo:poad/*',
+              'repo:poad@*',
+            ],
+          },
         },
-        StringLike: {
-          'token.actions.githubusercontent.com:sub': [
-            'repo:poad/*',
-            'repo:poad@*',
-          ],
-        },
-      },
         'sts:AssumeRoleWithWebIdentity',
       ).withSessionTags(),
       managedPolicies: [
