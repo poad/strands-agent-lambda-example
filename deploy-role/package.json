@@ -10,13 +10,13 @@
     "lint-fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^2.19.2",
+    "@dotenvx/dotenvx": "^2.20.1",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "26.1.2",
     "@vitest/eslint-plugin": "^1.6.26",
-    "aws-cdk": "^2.1135.0",
-    "eslint": "^10.8.0",
+    "aws-cdk": "^2.1135.1",
+    "eslint": "^10.8.1",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-awscdk": "^4.4.0",
     "eslint-plugin-import-x": "^4.17.1",
