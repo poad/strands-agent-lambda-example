@@ -10,7 +10,7 @@
     "lint-fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^2.20.1",
+    "@dotenvx/dotenvx": "^2.21.0",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "26.2.0",
@@ -24,12 +24,12 @@
     "jiti": "^2.7.0",
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.66.0",
+    "typescript-eslint": "^8.67.0",
     "vite": "^8.2.1",
     "vitest": "^4.1.10"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.263.0",
+    "aws-cdk-lib": "^2.264.0",
     "constructs": "^10.8.1"
   }
 }
