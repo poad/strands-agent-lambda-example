@@ -217,8 +217,8 @@ importers:
   agent:
     dependencies:
       '@aws-lambda-powertools/logger':
-        specifier: ^2.34.0
-        version: 2.34.0
+        specifier: ^2.35.0
+        version: 2.35.0
       '@aws-sdk/credential-provider-node':
         specifier: ^3.972.80
         version: 3.972.80
@@ -293,8 +293,8 @@ importers:
         specifier: ^1.6.27
         version: 1.6.27(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.10(@opentelemetry/api@1.9.1)(@types/node@26.2.0)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12)(yaml@2.9.0)))
       aws-cdk:
-        specifier: ^2.1136.0
-        version: 2.1136.0
+        specifier: ^2.1137.0
+        version: 2.1137.0
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
@@ -360,8 +360,8 @@ importers:
         specifier: ^1.6.27
         version: 1.6.27(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.10(@opentelemetry/api@1.9.1)(@types/node@26.2.0)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12)(yaml@2.9.0)))
       aws-cdk:
-        specifier: ^2.1136.0
-        version: 2.1136.0
+        specifier: ^2.1137.0
+        version: 2.1137.0
       eslint:
         specifier: ^10.8.1
         version: 10.8.1(jiti@2.7.0)
@@ -404,20 +404,20 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.2':
     resolution: {integrity: sha512-pDiuqH+qY3zM9lhhLjbKJ1tnKOHzQ2V4Wr/3qsxyKeKAkuPMI/BVGvZG1PbrikUw949cGVTfVEt4ETKKYnrj0Q==}
 
-  '@aws-cdk/cloud-assembly-schema@54.18.0':
-    resolution: {integrity: sha512-KceoGMrKbXp3qigQ8y67yq3Cd1k43GOw+E4KMf/MbDbRGyZEkfdLihhCD7obXvN5f1cKemZECFj+klLEoo1biA==}
+  '@aws-cdk/cloud-assembly-schema@54.19.0':
+    resolution: {integrity: sha512-o0axGGePF7NHFv3uIjKpfgMIQ8hG6U5gg629aNmE4+l08MndUKYaya3swhP3WoOKbxisVX3bVsrhnksN0NFoag==}
     engines: {node: '>= 18.0.0'}
     bundledDependencies:
       - jsonschema
       - semver
 
-  '@aws-lambda-powertools/commons@2.34.0':
-    resolution: {integrity: sha512-ga89L3UznCwkApsrVAYGywifAh9PpccXZAVE053B6IdKvZrwjv+L+ja1WyzU9sy9UR3wPEdh0LFiUCRZRhTfvQ==}
+  '@aws-lambda-powertools/commons@2.35.0':
+    resolution: {integrity: sha512-DPD5fnl7V1xSPJuKGQ8KETp+nPmcIw8mYWEdNfnuTr/zNDyTkiX2l3QNUPlrtpOPtJ7r+UGSbXCgKPPlXN27Bw==}
 
-  '@aws-lambda-powertools/logger@2.34.0':
-    resolution: {integrity: sha512-FIWQcdX/dqfKE+4H8N9w7y7/3/ANmDpKDgMlMc+yPNx2XDpKK6Ou1zLFYoNt5mV6dOZunFQcKbRWUy6zIDdE0w==}
+  '@aws-lambda-powertools/logger@2.35.0':
+    resolution: {integrity: sha512-ituCLfspm7IYfXH3o2W67anH3YgKh9N3wDqjsyW6RCw0BAv+vgSrIRbGBB+UqiT9DPU8HJTfoSs9JNYijlQS3g==}
     peerDependencies:
-      '@aws-lambda-powertools/jmespath': 2.34.0
+      '@aws-lambda-powertools/jmespath': 2.35.0
       '@middy/core': 4.x || 5.x || 6.x || 7.x
     peerDependenciesMeta:
       '@aws-lambda-powertools/jmespath':
@@ -425,8 +425,8 @@ packages:
       '@middy/core':
         optional: true
 
-  '@aws-sdk/client-bedrock-runtime@3.1111.0':
-    resolution: {integrity: sha512-+HHZEehmRaGo1F7YVACor/xARM+m1j8YloFaXfoWn4TIPRojUQId/wyItH2jXyro8JoL78CRRZSI1Z8StX0ldQ==}
+  '@aws-sdk/client-bedrock-runtime@3.1112.0':
+    resolution: {integrity: sha512-XHcpR1Z0j2oQrk7/U+YHgKqy9aV73CsTU7VwZ09jlrgK8eiX/34DbiRZN6VSaHFqgxti008MpxeQCVi52o9u1g==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.977.8':
@@ -487,6 +487,10 @@ packages:
 
   '@aws-sdk/token-providers@3.1111.0':
     resolution: {integrity: sha512-JfljgoVtl+s3Qy21n9a7Z48uCQaOXcN74KJ3TEQfPoB293GrXFSt6HSQJF1sTZ8c/5QedEvd3NjJQMO4u9qa5A==}
+    engines: {node: '>=20.0.0'}
+
+  '@aws-sdk/token-providers@3.1112.0':
+    resolution: {integrity: sha512-6PJbuH46F+qxL4Dup9ecsj2DD+JkYdF0ziv/ska/fJxIP2/NYIxff5utlPgaeKRVcSIacVNUP5NMRjCuJn92GA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/types@3.974.4':
@@ -1484,8 +1488,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1136.0:
-    resolution: {integrity: sha512-n6kCL9R9uuvb7WXEwiSs3rYGwnTy9AHHmxOT5Pj5/++E4PYz2bLDXIxzoiOMIj5maoyC52PTe/0GezFV+O0ILQ==}
+  aws-cdk@2.1137.0:
+    resolution: {integrity: sha512-SRy2df/5cqGvq8ncph1m93rWEh3RGbvP6uwElw+W0x135vZDzTpfbuq2L8oAHwK2yDt3RNS5sb7Phwb7xqQP2g==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -1836,8 +1840,8 @@ packages:
     resolution: {integrity: sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==}
     engines: {node: '>= 0.4'}
 
-  get-tsconfig@4.14.2:
-    resolution: {integrity: sha512-XpwZALwwl/BaKTAyC6+c5T8y6kCg2jk+XGqOVrKIQmW49pNypYLMRjCUXqa28tQgJlhS2RlzP7sc+Rx7W6qsfw==}
+  get-tsconfig@4.14.3:
+    resolution: {integrity: sha512-++QEw4DIY7WGoukz+/+A/8dGYPT9l9yIadnmSgZ8Rjr3YVSVDipQSO9CdnJo9ePqFqUUqh+wk9uIaoiAwsiPkA==}
 
   glob-parent@6.0.2:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
@@ -1855,8 +1859,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  hono@4.13.2:
-    resolution: {integrity: sha512-JydRilDRkYBQMt9qR9U92mXxmbGqsqSn/IKOrh4e7/gEbn+0zSr8igTu0obwJoNGN4sez28DIql7FBHWydoJpA==}
+  hono@4.13.3:
+    resolution: {integrity: sha512-r8AO2mYHoLxSHkgafNeC/BXyb2vWRxD3jem4Ts+ptav8oTG5FIRifAjuJEmZI4bSvvc2ns0GxmIYiZnHqN3mMw==}
     engines: {node: '>=16.9.0'}
 
   http-errors@2.0.1:
@@ -2609,25 +2613,25 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.2': {}
 
-  '@aws-cdk/cloud-assembly-schema@54.18.0': {}
+  '@aws-cdk/cloud-assembly-schema@54.19.0': {}
 
-  '@aws-lambda-powertools/commons@2.34.0':
+  '@aws-lambda-powertools/commons@2.35.0':
     dependencies:
       '@aws/lambda-invoke-store': 0.3.0
 
-  '@aws-lambda-powertools/logger@2.34.0':
+  '@aws-lambda-powertools/logger@2.35.0':
     dependencies:
-      '@aws-lambda-powertools/commons': 2.34.0
+      '@aws-lambda-powertools/commons': 2.35.0
       '@aws/lambda-invoke-store': 0.3.0
 
-  '@aws-sdk/client-bedrock-runtime@3.1111.0':
+  '@aws-sdk/client-bedrock-runtime@3.1112.0':
     dependencies:
       '@aws-sdk/core': 3.977.8
       '@aws-sdk/credential-provider-node': 3.972.80
       '@aws-sdk/eventstream-handler-node': 3.972.33
       '@aws-sdk/middleware-eventstream': 3.972.28
       '@aws-sdk/middleware-websocket': 3.972.51
-      '@aws-sdk/token-providers': 3.1111.0
+      '@aws-sdk/token-providers': 3.1112.0
       '@aws-sdk/types': 3.974.4
       '@smithy/core': 3.33.2
       '@smithy/fetch-http-handler': 5.7.2
@@ -2773,6 +2777,15 @@ snapshots:
       tslib: 2.8.1
 
   '@aws-sdk/token-providers@3.1111.0':
+    dependencies:
+      '@aws-sdk/core': 3.977.8
+      '@aws-sdk/nested-clients': 3.997.43
+      '@aws-sdk/types': 3.974.4
+      '@smithy/core': 3.33.2
+      '@smithy/types': 4.17.2
+      tslib: 2.8.1
+
+  '@aws-sdk/token-providers@3.1112.0':
     dependencies:
       '@aws-sdk/core': 3.977.8
       '@aws-sdk/nested-clients': 3.997.43
@@ -2943,9 +2956,9 @@ snapshots:
       protobufjs: 7.6.5
       yargs: 17.7.3
 
-  '@hono/node-server@2.1.1(hono@4.13.2)':
+  '@hono/node-server@2.1.1(hono@4.13.3)':
     dependencies:
-      hono: 4.13.2
+      hono: 4.13.3
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -2983,7 +2996,7 @@ snapshots:
 
   '@modelcontextprotocol/sdk@1.30.0(zod@4.4.3)':
     dependencies:
-      '@hono/node-server': 2.1.1(hono@4.13.2)
+      '@hono/node-server': 2.1.1(hono@4.13.3)
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       content-type: 1.0.5
@@ -2993,7 +3006,7 @@ snapshots:
       eventsource-parser: 3.1.1
       express: 5.2.1
       express-rate-limit: 8.6.2(express@5.2.1)
-      hono: 4.13.2
+      hono: 4.13.3
       jose: 6.2.9
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
@@ -3337,7 +3350,7 @@ snapshots:
 
   '@strands-agents/sdk@1.13.0(@modelcontextprotocol/sdk@1.30.0(zod@4.4.3))(@opentelemetry/api@1.9.1)(@opentelemetry/exporter-metrics-otlp-http@0.221.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.221.0(@opentelemetry/api@1.9.1))(@opentelemetry/resources@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-metrics@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-node@2.10.0(@opentelemetry/api@1.9.1))(@smithy/types@4.17.2)(express@5.2.1)(zod@4.4.3)':
     dependencies:
-      '@aws-sdk/client-bedrock-runtime': 3.1111.0
+      '@aws-sdk/client-bedrock-runtime': 3.1112.0
       '@modelcontextprotocol/sdk': 1.30.0(zod@4.4.3)
       '@opentelemetry/api': 1.9.1
       '@smithy/fetch-http-handler': 5.7.2
@@ -3644,10 +3657,10 @@ snapshots:
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.292
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.2
-      '@aws-cdk/cloud-assembly-schema': 54.18.0
+      '@aws-cdk/cloud-assembly-schema': 54.19.0
       constructs: 10.8.1
 
-  aws-cdk@2.1136.0: {}
+  aws-cdk@2.1137.0: {}
 
   balanced-match@4.0.4: {}
 
@@ -3797,7 +3810,7 @@ snapshots:
 
   eslint-import-context@0.1.9(unrs-resolver@1.12.2):
     dependencies:
-      get-tsconfig: 4.14.2
+      get-tsconfig: 4.14.3
       stable-hash-x: 0.2.0
     optionalDependencies:
       unrs-resolver: 1.12.2
@@ -3807,7 +3820,7 @@ snapshots:
       debug: 4.4.3
       eslint: 10.8.1(jiti@2.7.0)
       eslint-import-context: 0.1.9(unrs-resolver@1.12.2)
-      get-tsconfig: 4.14.2
+      get-tsconfig: 4.14.3
       is-bun-module: 2.0.0
       stable-hash-x: 0.2.0
       tinyglobby: 0.2.17
@@ -4041,7 +4054,7 @@ snapshots:
       dunder-proto: 1.0.1
       es-object-atoms: 1.1.2
 
-  get-tsconfig@4.14.2:
+  get-tsconfig@4.14.3:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -4057,7 +4070,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.13.2: {}
+  hono@4.13.3: {}
 
   http-errors@2.0.1:
     dependencies:
