@@ -1,7 +1,7 @@
 packages:
   - .
-  - ./agent
-  - ./deploy-role
+  - agent
+  - deploy-role
 
 allowBuilds:
   esbuild: false
