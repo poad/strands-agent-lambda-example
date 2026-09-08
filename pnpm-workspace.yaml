@@ -4,8 +4,15 @@ packages:
   - deploy-role
 
 allowBuilds:
+  better-sqlite3: false
   esbuild: false
+  node-llama-cpp: false
   protobufjs: false
+  tree-sitter-go: false
+  tree-sitter-javascript: false
+  tree-sitter-python: false
+  tree-sitter-rust: false
+  tree-sitter-typescript: false
   unrs-resolver: false
 
 blockExoticSubdeps: true
