@@ -18,7 +18,7 @@
     "aws-cdk": "^2.1140.0",
     "eslint": "^10.10.0",
     "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-awscdk": "^4.4.1",
+    "eslint-plugin-awscdk": "^4.4.2",
     "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-promise": "^7.3.0",
     "jiti": "^2.7.0",
