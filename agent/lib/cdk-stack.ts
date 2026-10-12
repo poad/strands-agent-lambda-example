@@ -2,20 +2,14 @@ import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
 interface CloudfrontCdnTemplateStackProps extends cdk.StackProps {
-  readonly appName: string
+  readonly appName: string;
 }
 
 export class CloudfrontCdnTemplateStack extends cdk.Stack {
-  constructor(
-    scope: Construct,
-    id: string,
-    props: CloudfrontCdnTemplateStackProps,
-  ) {
+  constructor(scope: Construct, id: string, props: CloudfrontCdnTemplateStackProps) {
     super(scope, id, props);
 
-    const {
-      appName,
-    } = props;
+    const { appName } = props;
 
     const databricksWorkspaceUrl = this.node.tryGetContext('databricks-workspace-url');
     const databricksOauthClientId = this.node.tryGetContext('databricks-oauth-client-id');
@@ -53,7 +47,8 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
         target: 'node24',
         minify: true,
         format: cdk.aws_lambda_nodejs.OutputFormat.ESM,
-        banner: 'import { createRequire } from \'module\';const require = createRequire(import.meta.url);',
+        banner:
+          "import { createRequire } from 'module';const require = createRequire(import.meta.url);",
         // ...devOptions.bundling,
       },
       memorySize: 256,
@@ -69,10 +64,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
             statements: [
               new cdk.aws_iam.PolicyStatement({
                 effect: cdk.aws_iam.Effect.ALLOW,
-                actions: [
-                  'bedrock:InvokeModel*',
-                  'logs:PutLogEvents',
-                ],
+                actions: ['bedrock:InvokeModel*', 'logs:PutLogEvents'],
                 resources: ['*'],
               }),
             ],

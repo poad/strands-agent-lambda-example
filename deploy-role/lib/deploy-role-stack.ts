@@ -1,6 +1,6 @@
+import * as iam from 'aws-cdk-lib/aws-iam';
 import * as cdk from 'aws-cdk-lib/core';
 import { Construct } from 'constructs';
-import * as iam from 'aws-cdk-lib/aws-iam';
 
 export class DeployRoleStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -9,29 +9,29 @@ export class DeployRoleStack extends cdk.Stack {
     const repositoryId = this.node.tryGetContext('repository-id');
     const repositoryOwnerId = this.node.tryGetContext('repository-owner-id');
 
-    const cdkDeployPolicy = iam.ManagedPolicy.fromManagedPolicyName(this, 'CdkDeployPolicy', 'CdkDeployMinimalPolicy');
+    const cdkDeployPolicy = iam.ManagedPolicy.fromManagedPolicyName(
+      this,
+      'CdkDeployPolicy',
+      'CdkDeployMinimalPolicy',
+    );
 
     new iam.Role(this, 'Role', {
       roleName: 'strands-agent-lambda-example-deploy-role',
       assumedBy: new iam.FederatedPrincipal(
-        `arn:aws:iam::${this.account}:oidc-provider/token.actions.githubusercontent.com`, {
+        `arn:aws:iam::${this.account}:oidc-provider/token.actions.githubusercontent.com`,
+        {
           StringEquals: {
             'token.actions.githubusercontent.com:aud': 'sts.amazonaws.com',
             'token.actions.githubusercontent.com:repository_id': repositoryId,
             'token.actions.githubusercontent.com:repository_owner_id': repositoryOwnerId,
           },
           StringLike: {
-            'token.actions.githubusercontent.com:sub': [
-              'repo:poad/*',
-              'repo:poad@*',
-            ],
+            'token.actions.githubusercontent.com:sub': ['repo:poad/*', 'repo:poad@*'],
           },
         },
         'sts:AssumeRoleWithWebIdentity',
       ).withSessionTags(),
-      managedPolicies: [
-        cdkDeployPolicy,
-      ],
+      managedPolicies: [cdkDeployPolicy],
       inlinePolicies: {
         'iam-policy': new iam.PolicyDocument({
           statements: [

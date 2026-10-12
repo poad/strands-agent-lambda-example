@@ -1,24 +1,25 @@
 'use strict';
 
-import { APIGatewayProxyEvent, APIGatewayProxyEvent, Context, Callback } from 'aws-lambda';
-import { Stream } from 'stream'
+import { Stream } from 'stream';
+
+import { APIGatewayProxyEvent, Context, Callback } from 'aws-lambda';
 
 export type Event = APIGatewayProxyEvent | APIGatewayProxyEventV2;
 
 export class HttpResponseStream {
-  static from(underlyingStream: any, prelude: any): any;
+  from(underlyingStream: unknown, prelude: unknown): unknown;
 }
 
 export type RequestHandler = (
   event: Event,
   streamResponse: Stream.WritableStream,
   ctx?: Context,
-  callback?: Callback<any>,
-) => any | Promise<any>;
+  callback?: Callback<unknown>,
+) => unknown | Promise<unknown>;
 
 declare global {
   namespace awslambda {
-      function streamifyResponse(handler: RequestHandler, option?: any): RequestHandler;
-      let HttpResponseStream: HttpResponseStream;
+    function streamifyResponse(handler: RequestHandler, option?: unknown): RequestHandler;
+    let HttpResponseStream: HttpResponseStream;
   }
 }
