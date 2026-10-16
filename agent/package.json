@@ -13,7 +13,7 @@
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.36.0",
     "@aws-sdk/credential-provider-node": "^3.972.84",
-    "@dotenvx/dotenvx": "^2.33.0",
+    "@dotenvx/dotenvx": "^2.34.1",
     "@modelcontextprotocol/client": "^2.3.1",
     "@opentelemetry/api": "^1.9.1",
     "@opentelemetry/exporter-logs-otlp-proto": "^0.223.0",
@@ -27,8 +27,8 @@
     "@opentelemetry/sdk-node": "^0.223.0",
     "@opentelemetry/sdk-trace-base": "^2.12.0",
     "@opentelemetry/sdk-trace-node": "^2.12.0",
-    "@strands-agents/sdk": "^1.19.0",
-    "aws-cdk-lib": "^2.272.0",
+    "@strands-agents/sdk": "^1.20.0",
+    "aws-cdk-lib": "^2.273.0",
     "constructs": "^10.8.1",
     "uuid": "^14.0.2"
   },
