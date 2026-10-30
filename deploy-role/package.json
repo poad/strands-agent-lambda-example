@@ -17,7 +17,7 @@
     "@dotenvx/dotenvx": "^2.38.2",
     "@eslint/js": "^10.0.1",
     "@types/node": "26.6.5",
-    "aws-cdk": "^2.1146.0",
+    "aws-cdk": "^2.1146.1",
     "eslint": "^10.13.0",
     "oxfmt": "^0.74.0",
     "oxlint-plugin-awscdk": "^1.0.4",
