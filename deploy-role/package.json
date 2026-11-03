@@ -10,7 +10,7 @@
     "lint-fix": "oxfmt && oxlint . --fix"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.274.0",
+    "aws-cdk-lib": "^2.275.0",
     "constructs": "^10.8.1"
   },
   "devDependencies": {
@@ -19,7 +19,7 @@
     "@types/node": "26.6.5",
     "aws-cdk": "^2.1146.1",
     "eslint": "^10.13.0",
-    "oxfmt": "^0.74.0",
+    "oxfmt": "^0.75.0",
     "oxlint-plugin-awscdk": "^1.0.4",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",

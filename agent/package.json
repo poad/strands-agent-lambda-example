@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.36.0",
-    "@aws-sdk/credential-provider-node": "^3.972.88",
+    "@aws-sdk/credential-provider-node": "^3.972.89",
     "@dotenvx/dotenvx": "^2.38.2",
     "@modelcontextprotocol/client": "^2.4.0",
     "@opentelemetry/api": "^1.10.0",
@@ -28,7 +28,7 @@
     "@opentelemetry/sdk-trace-base": "^2.12.0",
     "@opentelemetry/sdk-trace-node": "^2.12.0",
     "@strands-agents/sdk": "^1.22.0",
-    "aws-cdk-lib": "^2.274.0",
+    "aws-cdk-lib": "^2.275.0",
     "constructs": "^10.8.1",
     "uuid": "^14.0.3"
   },
@@ -39,7 +39,7 @@
     "aws-cdk": "^2.1146.1",
     "dotenv": "^18.0.9",
     "esbuild": "^0.28.2",
-    "oxfmt": "^0.74.0",
+    "oxfmt": "^0.75.0",
     "oxlint-plugin-awscdk": "^1.0.4",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
