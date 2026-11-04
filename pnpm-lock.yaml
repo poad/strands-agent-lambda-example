@@ -345,8 +345,8 @@ packages:
       '@middy/core':
         optional: true
 
-  '@aws-sdk/client-bedrock-runtime@3.1157.0':
-    resolution: {integrity: sha512-LWP6KhXZJlGXFcbfi7jL1WMzaDZ2GJoaaQge0JsUer1pNkvCozvftvOSbprvHoPY4YvqdrszH8CU5ub6cHTNQA==}
+  '@aws-sdk/client-bedrock-runtime@3.1158.0':
+    resolution: {integrity: sha512-3vmwdaNnSbHwydMkC7dir/izbR4SyUheJ5uVwR/cyN+M+6d2It0ZTDQhU68fndo/7xyio47MDSxs5TKxMYgItA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.978.6':
@@ -407,6 +407,10 @@ packages:
 
   '@aws-sdk/token-providers@3.1157.0':
     resolution: {integrity: sha512-AeAzcwWRP2uANO2TjFpKjRdvOCzgfIu6YQl9Ceibd6E0gnq5dfOzujFnq2aeqgbLg4wRtXbUZE4gekCCPrz/OQ==}
+    engines: {node: '>=20.0.0'}
+
+  '@aws-sdk/token-providers@3.1158.0':
+    resolution: {integrity: sha512-siJPu4mhcWElaX7XrWQJlPnWgbxTES5624EFsvg3lQvGsSNXa/YEWG+d3GaibFJ3DUqrcVR2N7VCq0FZV4FQbQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/types@3.975.0':
@@ -2481,14 +2485,14 @@ snapshots:
     dependencies:
       '@aws-lambda-powertools/commons': 2.36.0
 
-  '@aws-sdk/client-bedrock-runtime@3.1157.0':
+  '@aws-sdk/client-bedrock-runtime@3.1158.0':
     dependencies:
       '@aws-sdk/core': 3.978.6
       '@aws-sdk/credential-provider-node': 3.972.89
       '@aws-sdk/eventstream-handler-node': 3.972.39
       '@aws-sdk/middleware-eventstream': 3.972.34
       '@aws-sdk/middleware-websocket': 3.972.59
-      '@aws-sdk/token-providers': 3.1157.0
+      '@aws-sdk/token-providers': 3.1158.0
       '@aws-sdk/types': 3.975.0
       '@smithy/core': 3.37.0
       '@smithy/fetch-http-handler': 5.8.0
@@ -2634,6 +2638,15 @@ snapshots:
       tslib: 2.8.1
 
   '@aws-sdk/token-providers@3.1157.0':
+    dependencies:
+      '@aws-sdk/core': 3.978.6
+      '@aws-sdk/nested-clients': 3.997.51
+      '@aws-sdk/types': 3.975.0
+      '@smithy/core': 3.37.0
+      '@smithy/types': 4.19.0
+      tslib: 2.8.1
+
+  '@aws-sdk/token-providers@3.1158.0':
     dependencies:
       '@aws-sdk/core': 3.978.6
       '@aws-sdk/nested-clients': 3.997.51
@@ -3371,7 +3384,7 @@ snapshots:
 
   '@strands-agents/sdk@1.22.0(@modelcontextprotocol/client@2.4.0)(@opentelemetry/api@1.10.0)(@opentelemetry/exporter-metrics-otlp-http@0.300.0(@opentelemetry/api@1.10.0))(@opentelemetry/exporter-trace-otlp-http@0.300.0(@opentelemetry/api@1.10.0))(@opentelemetry/resources@3.0.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-metrics@3.0.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@2.12.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-node@2.12.0(@opentelemetry/api@1.10.0))(@smithy/types@4.19.0)(zod@4.6.7)':
     dependencies:
-      '@aws-sdk/client-bedrock-runtime': 3.1157.0
+      '@aws-sdk/client-bedrock-runtime': 3.1158.0
       '@modelcontextprotocol/client': 2.4.0
       '@modelcontextprotocol/ext-tasks': 0.2.2(@modelcontextprotocol/client@2.4.0)
       '@opentelemetry/api': 1.10.0
