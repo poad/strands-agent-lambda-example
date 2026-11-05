@@ -7,7 +7,7 @@ import * as httpMetrics from '@opentelemetry/exporter-metrics-otlp-proto';
 import * as httpTraceing from '@opentelemetry/exporter-trace-otlp-proto';
 import { LogRecordExporter } from '@opentelemetry/sdk-logs';
 import { PushMetricExporter } from '@opentelemetry/sdk-metrics';
-import { SpanExporter } from '@opentelemetry/sdk-trace';
+import { SpanExporter } from '@opentelemetry/sdk-trace-base';
 
 configureDotenvX();
 

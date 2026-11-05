@@ -1,16 +1,16 @@
 import { init } from './observability/exporters.js';
 import { tools } from './tools/aws-tool.js';
 
-import { TracerProvider, SimpleSpanProcessor } from '@opentelemetry/sdk-trace';
+import { NodeTracerProvider, SimpleSpanProcessor } from '@opentelemetry/sdk-trace-node';
 import { Agent, BedrockModel } from '@strands-agents/sdk';
 import { setupTracer } from '@strands-agents/sdk/telemetry';
 
 const exporters = await init();
 if (exporters.trace) {
-  const provider = new TracerProvider({
+  const provider = new NodeTracerProvider({
     spanProcessors: [
       // Configure OTLP endpoint programmatically
-      new SimpleSpanProcessor({ exporter: exporters.trace }),
+      new SimpleSpanProcessor(exporters.trace),
     ],
   });
   setupTracer({
