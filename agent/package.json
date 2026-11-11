@@ -27,7 +27,7 @@
     "@opentelemetry/sdk-node": "^0.300.0",
     "@opentelemetry/sdk-trace-base": "^2.12.0",
     "@opentelemetry/sdk-trace-node": "^2.12.0",
-    "@strands-agents/sdk": "^1.23.0",
+    "@strands-agents/sdk": "^1.24.0",
     "aws-cdk-lib": "^2.275.0",
     "constructs": "^10.8.1",
     "uuid": "^14.0.3"
