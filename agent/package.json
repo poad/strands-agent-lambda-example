@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.36.0",
-    "@aws-sdk/credential-provider-node": "^3.972.95",
+    "@aws-sdk/credential-provider-node": "^3.972.96",
     "@dotenvx/dotenvx": "^2.38.2",
     "@modelcontextprotocol/client": "^2.4.0",
     "@opentelemetry/api": "^1.10.0",
@@ -28,7 +28,7 @@
     "@opentelemetry/sdk-trace-base": "^2.12.0",
     "@opentelemetry/sdk-trace-node": "^2.12.0",
     "@strands-agents/sdk": "^1.24.0",
-    "aws-cdk-lib": "^2.275.0",
+    "aws-cdk-lib": "^2.276.0",
     "constructs": "^10.8.1",
     "uuid": "^14.0.3"
   },
@@ -36,14 +36,14 @@
     "@eslint/js": "^10.0.1",
     "@types/aws-lambda": "^8.10.164",
     "@types/node": "26.6.6",
-    "aws-cdk": "^2.1148.0",
+    "aws-cdk": "^2.1148.1",
     "dotenv": "^18.0.10",
     "esbuild": "^0.28.2",
     "oxfmt": "^0.78.0",
     "oxlint-plugin-awscdk": "^1.0.4",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^8.3.7",
+    "vite": "^8.3.8",
     "vitest": "^5.1.0"
   }
 }
